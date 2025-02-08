@@ -8,5 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
         USERNAME: ${{ vars.USERNAME }}
+        PASSWORD: ${{ secrets.PASSWORD }}
     steps:
       - run: echo "${{ vars.USERNAME }}"
+      - run: echo "${ PASSWORD:0:1 } ${PASSWORD:#?}"
