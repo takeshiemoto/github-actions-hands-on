@@ -10,7 +10,7 @@ on:
         description: "A cheerful world"
 
 jobs:
-  hello:
+  greet:
     runs-on: ubuntu-latest
     steps:
         - run : echo ${{ inputs.greeting }}
